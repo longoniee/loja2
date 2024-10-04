@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adicionar Produto</title>
+</head>
+<body>
+    <header>
+        <div>
+    
+            <h1>Bem-vindo ao <em>Café na hora</em>!</h1>
+            <p>Sinta-se a vontade, você é o nosso cliente VIP</p><div>
+            <a href="index2.html">Página Inicial</a>
+            <a href="ctrl.estoque2.html">-  Controle de Estoque</a>
+            <a href="add-produto2.html">-  Adicionar Produto</a>
+            <a href="funcionarios2.html">-  Funcionários</a>
+        </div>
+        </div>
+     
+    </header>
+    <div class="gabriel">
+        <h2>Adicionar Produto</h2>
+    </div>
+    
+    
+    <form action="submit">
+        <div>
+            <br>
+            <label for="link-foto">Link para foto: </label>
+            <input type="url" id="link-foto" name="link-foto">
+        </div>
+        <br>
+        <div>
+            <label for="descricao">Descrição do produto: </label>
+            <!-- Adicione o id apropriado para o input abaixo -->
+            <input type="text" id="descrição" name="descrição">
+        </div>
+        <br>
+        <div>
+            <label for="preco">Preço (em R$): </label>
+            <!-- Adicione o id apropriado e o type para receber números abaixo -->
+            <input type="number" id="preço" name="preço">
+        </div>
+        <br>
+        <div>
+            <!-- Preencha as propriedades necessárias para os elementos abaixo -->
+            <label>Quantidade disponível: </label>
+            <input type="number" id="Quantidade" name="Quantidade">
+        </div>
+<br>
+        <div class="form-add">
+            <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
+            <button type="submit">Adicionar</button>
+        </div>
+    </form>
+</body>
+</html>
+<style>
+    *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+header{
+   background-color: black;
+   color:white;
+   justify-content: center;
+   text-align: center;
+   padding: 3.5vh 0;
+   p{
+        padding: 16px 0;
+    } 
+}
+header div a{
+       text-decoration: none;
+       color: white;
+   }
+   .ana{
+       background-color: blue;
+       margin: 0%;
+       padding: 2vh 0;
+       justify-content: center;
+   text-align: center;
+   color: white;
+   }
+   table img{
+       width: 15vh;
+       height: 15vh;
+   }
+   td{
+       border: 3px solid blue  ;
+       padding: 1vh;
+       text-align: center;
+       width: 40vh;
+   }
+</style>
