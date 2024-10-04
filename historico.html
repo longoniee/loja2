@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Funcionários</title>
+<link rel="stylesheet" href="/css/historico.css">
+</head>
+<body>
+
+<header>
+<div>
+<h1>Bem vindo a <em>fruteira dos cria</em>!</h1>
+<p>é muito bom ver voce, fique a vontade</p><div>
+<a href="index2.html">Página Inicial</a>
+<a href="ctrl.estoque2.html">-  Controle de Estoque</a>
+<a href="add-produto2.html">-  Adicionar Produto</a>
+<a href="funcionarios2.html">-  Funcionários</a>
+<a href="historico.html">-  Histórico de compras</a>
+<a href="vendas.html">-  Histórico de vendas</a>
+</div>
+</div>
+</header>
+<main>
+<div class="gabriel">
+<h2>Histórico</h2>
+</div>
+
+ 
+    <section>
+<div class="filtro">
+<select name="calendar" id="">
+<option value="Domingo">Domingo</option>
+<option value="segunda">Segunda-Feira</option>
+<option value="terca">Terça-Feira</option>
+<option value="quarta">Quarta-Feira</option>
+<option value="quinta">Quinta-Feira</option>
+<option value="sexta">Sexta-Feira</option>
+<option value="sabado">Sabado</option>
+</select>
+</div>
+<table>
+<tr>
+<th>Horário</th>
+<th>Funcionário</th>
+<th>Produto</th>
+<th>Quantidade</th>
+<th>Valor Total</th>
+<th>Forma de Pagamento</th>
+</tr>
+<tr>
+<td>10:30</td>
+<td>miguel paris</td>
+<td>uva</td>
+<td>2</td>
+<td>R$ 20</td>
+<td>dinheiro</td>
+</tr>
+</table>
+</section>
+</main>
+</body>
+</html>
+ 
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+body{
+    height: 100vh;
+}
+header{
+    text-align: center;
+    padding: 2.5rem 0rem;
+    background:blue;
+    color: white;
+ 
+    h1{
+        padding-bottom: 0.5rem;
+    }
+}
+nav{
+    text-align: center;
+    padding: 1rem 0;
+    background: blue;
+    a{
+        color: white;
+        text-decoration: none;
+        margin: 0 0.5rem;
+    }
+}
+section{
+    padding: 2rem;
+ 
+    h2{
+        padding-bottom: 1rem;
+    }
+}
+ 
+.filtro{
+    display: flex;
+    justify-content: end;
+    margin: 1rem 0;
+ 
+    select{
+        padding: 10px;
+        width: 15rem;
+    }
+}
+ 
+table{
+    border-collapse: collapse;
+}
+ 
+td{
+    border: 0.1rem solid #000;
+    width: 20rem;
+    height: 3rem;
+    text-align: center; 
+}
+ 
+th{
+    padding: 1rem ;
+    background:blue;
+    border: 0.1rem solid blue;
+    color: white;
+}
+ 
+.ana{
+        background-color: blue;
+        margin: 0%;
+        padding: 2vh 0;
+        justify-content: center;
+    text-align: center;
+    color: white;
+    }
+ 
+    header div a{
+        text-decoration: none;
+        color: white;
+    }
+</style>
