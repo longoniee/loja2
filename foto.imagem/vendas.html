@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagina de Vendas</title>
+<link rel="stylesheet" href="/css/vendas.css">
+</head>
+<body>
+<header>
+
+ 
+        <div>
+<h1>Bem-vindo ao <em>Café na hora</em>!</h1>
+<p>Sinta-se a vontade, você é o nosso cliente VIP</p><div>
+<a href="index.html">Página Inicial</a>
+<a href="ctrl-estoque.html">-  Controle de Estoque</a>
+<a href="add-produto.html">-  Adicionar Produto</a>
+<a href="funcionarios.html">-  Funcionários</a>
+<a href="historico.html">-  Histórico de compras</a>
+<a href="vendas.html">-  Histórico de vendas</a>
+</div>
+</div>
+</header>
+<div class="ana">
+<h2>Página de vendas</h2>
+</div>
+<section>
+
+ 
+            <form action="#">
+ 
+                <label for="produto">Selecione o produto que você escolheu:</label>
+<select name="produto" id="">
+<option value="pao">Pão de queijo</option>
+<option value="cafe">Café expresso</option>
+<option value="chocolate">Chocolate quente</option>
+<option value="misto">Misto quente</option>
+<option value="melancia">Suco de melancia</option>
+</select>
+ 
+                <label for="quantidade">Quantidade:</label>
+<input type="number" name="quantidade">
+ 
+                <label for="frete">Digite seu Cep:</label>
+<input type="number" name="quantidade">
+ 
+                <label for="pagamento">Forma de Pamento:</label>
+<select name="pagamento" id="">
+<option value="cartao">Cartão de Credito</option>
+<option value="dinheiro">Dinheiro</option>                 
+<option value="pix">Pix</option>
+</select>
+<button type="submit">Finalizar Compra</button>
+</form>
+</section>
+</main>
+</body>
+</html>
+ 
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+body{
+    height: 100vh;
+}
+header{
+    text-align: center;
+    padding: 2.5rem 0rem;
+    background: black;
+    color: white;
+ 
+    h1{
+        padding-bottom: 0.5rem;
+    }
+}
+nav{
+    text-align: center;
+    padding: 1rem 0;
+    background: #000;
+    a{
+        color: white;
+        text-decoration: none;
+        margin: 0 0.5rem;
+    }
+}
+section{
+    padding: 2rem;
+ 
+    h2{
+        padding-bottom: 1rem;
+    }
+}
+ 
+form{
+    display: flex;
+    flex-direction: column;
+
+ 
+    input, select{
+        padding: 0.6rem 0;
+        margin: 0.325rem 0 1rem;
+        padding-left: 0.5rem;
+    }
+    button{
+        background:black;
+        border: 1px black;
+        color: white;
+        padding: 1rem 0;
+        margin: 0.325rem 0 1rem;
+        cursor: pointer;
+    }
+}
+ 
+.ana{
+        background-color: rgb(136, 87, 8);
+        margin: 0%;
+        padding: 2vh 0;
+        justify-content: center;
+    text-align: center;
+    color: white;
+    }
+ 
+    header div a{
+        text-decoration: none;
+        color: white;
+    }
+</style>
